@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const EditProfileForm = () => {
   const [formData, setFormData] = useState({
     name: "",

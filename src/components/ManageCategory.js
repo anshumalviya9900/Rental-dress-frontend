@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import AdminNav from './AdminNav';
 import Apis from '../Apis';
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const ManageCategory = () => {
   const [categoryName, setCategoryName] = useState('');
   const [categories, setCategories] = useState([]);

@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import NavBar from "./NavBar";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const SignIn = () => {
   const navigate = useNavigate();
   const [messages, setMessages] = useState([

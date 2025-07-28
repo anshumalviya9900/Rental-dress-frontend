@@ -3,10 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Apis from "../Apis";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const AdminSignIn = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: "", password: "" });

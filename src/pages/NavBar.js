@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const NavBar = () => {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);

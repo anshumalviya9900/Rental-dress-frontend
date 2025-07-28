@@ -4,10 +4,8 @@ import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import UserHome from "../pages/UserHome";
 import Apis from "../Apis";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const GoogleSignIn = () => {
      const navigate = useNavigate();
     const handleGoogleLogin = async () => {

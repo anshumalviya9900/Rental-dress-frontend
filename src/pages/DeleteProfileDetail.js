@@ -2,10 +2,8 @@ import React from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const DeleteProfileDetail = () => {
   const handleDelete = async () => {
     const confirmDelete = window.confirm("Are you sure you want to delete your profile?");

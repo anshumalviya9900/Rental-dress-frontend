@@ -3,10 +3,8 @@ import axios from "axios";
 import NavBar from "./NavBar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const DonateForm = () => {
   const [form, setForm] = useState({ name: "", description: "" });
   const [donations, setDonations] = useState([]);

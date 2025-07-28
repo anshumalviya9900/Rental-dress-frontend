@@ -10,10 +10,8 @@ import { useNavigate } from "react-router-dom";
 import Apis from "../Apis";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 export default function AccountPage() {
   const [view, setView] = useState("dashboard");
   const [profile, setProfile] = useState(null);

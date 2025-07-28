@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {BASE_URL} from "../Config"; 
-
-
-const baseUrl = BASE_URL;
+import config from "../Config";
+const baseUrl = config.BASE_URL;
 const OrderHistory = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -12,7 +10,7 @@ const OrderHistory = () => {
   useEffect(() => {
     fetchOrderHistory();
   }, []);
-  
+
 
   const fetchOrderHistory = async () => {
     try {
