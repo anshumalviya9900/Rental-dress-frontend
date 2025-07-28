@@ -20,7 +20,7 @@ const DressDonationSection = () => {
       </div>
 
       <div style={rightSection}>
-        <img src="/Donate.jpg" alt="Sketch" style={sketchImage} />
+        <img src="/donate.jpg" alt="Sketch" style={sketchImage} />
         <h2 style={heading}>
           OWN A <span style={cursive}>Designer Label?</span>
         </h2>
