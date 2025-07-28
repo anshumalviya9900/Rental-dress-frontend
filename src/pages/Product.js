@@ -155,7 +155,7 @@ const Product = () => {
                 />
               ))}
             </div>
-            <img src={`baseUrl/${mainImage}`} alt="main" style={styles.mainImage} />
+            <img src={`${baseUrl}/${mainImage}`} alt="main" style={styles.mainImage} />
           </div>
 
           <div style={styles.rightDetail}>
