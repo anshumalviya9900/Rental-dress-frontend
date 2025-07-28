@@ -1,0 +1,17 @@
+export default {
+    ALL_CATEGORY:"http://localhost:3000/admin/allcategory",
+    ADD_PRODUCT:"http://localhost:3000/admin/addproduct",
+    ALL_DONATIONS:"http://localhost:3000/dress/all-donations",
+    DRESS_IMAGE:"http://localhost:3000/uploads",
+   ALL_PRODUCTS:"http://localhost:3000/admin/allproducts",
+   DELETE_PRODUCT:"http://localhost:3000/admin/delete-product",
+   UPDATE_PRODUCT:"http://localhost:3000/admin/update-product",
+   ADMIN_ALL_PRODUCTS_IMAGE:"http://localhost:3000",
+   GOOGLE_SIGNIN:"http://localhost:3000/user/google-login",
+  UPDATE_CATEGORY:"http://localhost:3000/admin/update-category",
+  ADD_CATEGORY:"http://localhost:3000/admin/addcategory",
+  USERPROFILE_FETCH_ME:"http://localhost:3000/userprofile/fetch/me",
+  USER_LOGOUT:"http://localhost:3000/users/logout",
+ ADMIN_LOGOUT:"http://localhost:3000/admin/logout",
+ADMIN_SIGNIN:"http://localhost:3000/admin/sign-in",
+}
